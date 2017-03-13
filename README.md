@@ -46,7 +46,7 @@ Application中初始化下载
               .start();
 
 只要设置下载Url即可，文件名下载库会自动抓取，
-默认优先级为中等，回调UI下载自动处理，默认的保存路径为：你的app包名+ /tammic/downloads/   下
+默认优先级为中等，回调UI下载自动处理，默认的保存路径为：你的apk包名+ /tamic/downloads/  下
 
 **simple 2：**
 
