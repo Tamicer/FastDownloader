@@ -47,15 +47,15 @@ Application中初始化下载
 
 **simple 2：**
 
-    new Download.Builder()
-         .url("http://downloads2.txt99.com/d/file/p/txt/2016/%E5%BD%B1%E5%B8%9D%E7%9A%84%E8%80%81%E5%A9%86.txt")//下载url
-         .priority(Priority.HIGH)//优先级
-         .savepath("可以保存指定目录")//保存路径
-         .isImplicit(false)//是否提示UI
-         .channel(3000)//渠道，可选
-         .client(DLClientFactory.createClient(Type.NORMAL, this))//下载器
-         .setCallback(new DLCallback())//下载回调
-         .build(this)
-         .start();
+     new Download.Builder()
+          .url("http://downloads2.txt99.com/d/file/p/txt/2016/%E5%BD%B1%E5%B8%9D%E7%9A%84%E8%80%81%E5%A9%86.txt")//下载url
+          .priority(Priority.HIGH)//优先级
+          .savepath("可以保存指定目录")//保存路径
+          .isImplicit(false)//是否提示UI
+          .channel(3000)//渠道，可选
+          .client(DLClientFactory.createClient(Type.NORMAL, this))//下载器
+          .setCallback(new DLCallback())//下载回调
+          .build(this)
+          .start();
 
 这种配置 可定制下载的文件名，存储路径，优先级，以及渠道，是否显示通知栏更新UI等，并且回调可以自我实现，譬如下载完成后显示安装对框等
