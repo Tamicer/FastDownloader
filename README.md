@@ -66,3 +66,52 @@ Application中初始化下载
      
 
 这种配置 可定制下载的文件名，存储路径，优先级，以及渠道，是否显示通知栏更新UI等，并且回调可以自我实现，譬如下载完成后显示安装对话框等
+
+**高级API**
+
+对某个下载进行操作可以单独加回调处理，如果忽略不设置，系统则默认不处理。
+
+
+
+      new Download.Builder()
+         .setCallback(new IDLCallback() {
+                    @Override
+                    public void onStart(String key, long fileLength, long downloaded, String savePath, String filenNme) {
+                        
+                    }
+
+                    @Override
+                    public void onSuccess(String key, long fileLength, long downloaded, String savePath, String filenNme, long aSpeed, String aAppiconName) {
+
+                    }
+
+                    @Override
+                    public void onAppSuccess(String key, long fileLength, long downloaded, String savePath, String filenNme, long aSpeed, String aAppiconName, int downloadType, int appType) {
+
+                    }
+
+                    @Override
+                    public void onFail(String key, long downloaded, String savePath, String filenNme, String aErrinfo) {
+
+                    }
+
+                    @Override
+                    public void onCancel(String key, long fileLength, long downloaded, String savePath, String filenNme) {
+
+                    }
+
+                    @Override
+                    public void onPause(String key, long fileLength, long downloaded, String savePath, String filenNme) {
+
+                    }
+
+                    @Override
+                    public void onDownloading(String key, long fileLength, long downloadLength, long speed, String fileName, int downloadType) {
+
+                    }
+
+                    @Override
+                    public void onRefresh(List<DownLoadInfo> infos) {
+
+                    }
+                })
