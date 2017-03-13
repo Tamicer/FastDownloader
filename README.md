@@ -15,7 +15,12 @@
 
 # 实践 #
 
+## 依赖 ##
 
+gradle依赖远程maven包：
+
+
+    compile 'com.tamic.fastdownloader:Android-FastDownloader:1.0.0'
 
 ## 初始化 ##
 
@@ -28,7 +33,7 @@ Application中初始化下载
   
     }
 
-## 案列 ##
+## 调用 ##
 
 **simple 1**：
 
