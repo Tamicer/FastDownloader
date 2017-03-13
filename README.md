@@ -51,8 +51,8 @@ Application中初始化下载
           .url("http://downloads2.txt99.com/d/file/p/txt/2016/%E5%BD%B1%E5%B8%9D%E7%9A%84%E8%80%81%E5%A9%86.txt")//下载url
           .priority(Priority.HIGH)//优先级
           .savepath("可以保存指定目录")//保存路径
-          .isImplicit(false)//是否提示UI
-          .channel(3000)//渠道，可选
+          .isImplicit(false)//是否显示UI
+          .channel(3000)//渠道可选
           .client(DLClientFactory.createClient(Type.NORMAL, this))//下载器
           .setCallback(new DLCallback())//下载回调
           .build(this)
