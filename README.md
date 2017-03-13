@@ -69,6 +69,14 @@ Application中初始化下载
 
 **高级API**
 
+重新开始下载
+
+     new Download.Builder()
+                .url(url)
+                .build(this)
+                .reStart();
+
+
 对某个下载进行操作可以单独加回调处理，如果忽略不设置，系统则默认不处理。
 
 
