@@ -72,6 +72,8 @@ Application中初始化下载
 
 **重新开始下载**
 
+通过`reStart()`对已有的下载任务开始强制重新下载，将会删除已下载的缓存文件。
+
 ```
       new Download.Builder()
                   .url(url)
