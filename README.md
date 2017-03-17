@@ -68,18 +68,18 @@ Application中初始化下载
 
 这种配置 可定制下载的文件名，存储路径，优先级，以及渠道，是否显示通知栏更新UI等，并且回调可以自我实现，譬如下载完成后显示安装对话框等
 
-#高级API
+# 高级API
 
 **重新开始下载**
 
-
+```
 
      new Download.Builder()
                 .url(url)
                 .build(this)
                 .reStart();
                 
-                
+ ```               
                 
 **下载Tag**
 
