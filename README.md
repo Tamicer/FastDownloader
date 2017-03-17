@@ -68,17 +68,40 @@ Application中初始化下载
 
 这种配置 可定制下载的文件名，存储路径，优先级，以及渠道，是否显示通知栏更新UI等，并且回调可以自我实现，譬如下载完成后显示安装对话框等
 
-**高级API**
+#高级API
 
-重新开始下载
+**重新开始下载**
 
-     new Download.Builder()
+
+
+     new Download.Builder()
                 .url(url)
                 .build(this)
                 .reStart();
+                
+                
+                
+**下载Tag**
 
 
-对某个下载进行操作可以单独加回调处理，如果忽略不设置，系统则默认不处理。
+
+```
+       new Download.Builder()
+                  .tag("key")
+                  .url(url)
+                  .build(this)
+                  .Start();
+                
+ ```  
+
+             
+ 
+  
+  如果不设置Tag, 默认为Url+当前系统时间。 有了这个Tag你可以做暂停需取消等操作
+
+**自定义回调**  
+
+对某个下载进行操作可以单独加回调处理，使用`setCallback`如果忽略不设置，系统则默认不处理。
 
 
 
