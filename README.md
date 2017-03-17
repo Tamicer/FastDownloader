@@ -72,11 +72,14 @@ Application中初始化下载
 
 **重新开始下载**
 
+```
+      new Download.Builder()
+                  .url(url)
+                  .build(this)
+                  .reStart();
+                
+```  
 
-     new Download.Builder()
-                .url(url)
-                .build(this)
-                .reStart();
                 
              
 
