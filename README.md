@@ -72,15 +72,14 @@ Application中初始化下载
 
 **重新开始下载**
 
-```
 
      new Download.Builder()
                 .url(url)
                 .build(this)
                 .reStart();
                 
- ```               
-                
+             
+
 **下载Tag**
 
 
@@ -97,7 +96,9 @@ Application中初始化下载
              
  
   
-  如果不设置Tag, 默认为Url+当前系统时间。 有了这个Tag你可以做暂停需取消等操作
+如果不设置Tag, 默认为Url+当前系统时间。 有了这个Tag你可以做暂停需取消等操作
+
+
 
 **自定义回调**  
 
