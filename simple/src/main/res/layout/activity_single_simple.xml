@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_single_simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".SingleSimpleActivity">
+
+    <Button
+
+        android:id="@+id/singledown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="始终只下一次"/>
+
+    <Button
+
+        android:id="@+id/taskdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="如果有，先删除旧文件再下"/>
+
+    <Button
+        android:id="@+id/newdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="每次都会重新下载"/>
+</LinearLayout>

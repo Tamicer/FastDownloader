@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.tamic.fastdownsimple.MainActivity">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+    <Button
+
+        android:id="@+id/downloadbase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基础下载页面"/>
+
+    <Button
+
+        android:id="@+id/downloadMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义下载页面"/>
+
+    <Button
+
+        android:id="@+id/downloadList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载清单页面"/>
+
+    <Button
+
+        android:id="@+id/downMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多模式下载页面"/>
+
+    <Button
+
+        android:id="@+id/loadCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描已下载数据"/>
+
+    <Button
+
+        android:id="@+id/statusCation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载状态操作页面"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">fastdown-simple</string>
+    <declare-styleable name="PracticalRecyclerView">
+        <attr name="empty_layout" format="reference" />
+        <attr name="error_layout" format="reference" />
+        <attr name="loading_layout" format="reference" />
+        <attr name="load_more_layout" format="reference" />
+        <attr name="no_more_layout" format="reference" />
+        <attr name="load_more_failed_layout" format="reference" />
+    </declare-styleable>
+
+    <string name="empty">还没任何下载数据，多去逛逛吧！</string>
+    <string name="error">网络连接失败,请点击重试</string>
+    <string name="load_more_failed">加载失败, 点击重试</string>
+    <string name="loading">加载中…</string>
+    <string name="no_more">-----我是有底线的-----</string>
+    <string name="title_activity_down_load_add">自定义下载</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">url</string>
+    <string name="action_sign_in">down</string>
+    <string name="error_invalid_url">This url address is invalid</string>
+    <string name="error_field_required">This url is invalid</string>
+    <string name="title_activity_single">模式测试页面</string>
+    <string name="title_activity_downbase">基础测试页面</string>
+    <string name="title_activity_downlist">下载列表</string>
+
+
+</resources>

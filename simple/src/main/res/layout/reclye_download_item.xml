@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="?android:attr/listPreferredItemHeight"
+              android:clickable="true"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:orientation="horizontal"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/down_item_icon"
+        android:layout_height="@dimen/down_item_icon"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/file"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/down_item_name_textsize"
+                android:gravity="center"
+                android:text="name"/>
+
+        </LinearLayout>
+
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressBackgroundTint="@color/colorPrimaryDark"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            >
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/popmenu_item_textsize"
+                android:gravity="left"
+                android:text="0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/popmenu_item_textsize"
+                    android:gravity="right"
+                    android:text="0.0KB"/>
+                <TextView
+                    android:id="@+id/filesize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/popmenu_item_textsize"
+                    android:gravity="right"
+                    android:text="0KB"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="@dimen/down_item_staus_width_size"
+        android:layout_height="@dimen/down_item_staus_width_size"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        tools:text=""/>
+
+</LinearLayout>
