@@ -86,13 +86,12 @@ Application中初始化下载
 
  
 
- `DownMode`  默认为DownMode.SINGLE：只存在一个此Url的下载记录。 再次下载不会创建新任务
+ `DownMode`  .mode(DownMode.SINGLE)设置下载任务模式，默认为DownMode.SINGLE：只存在一个此Url的下载记录。 再次下载不会创建新任务
  
      new Download.Builder().mode(DownMode.SINGLE).url(url)
-                  .build(this)
-                  .start();
+                  .build(this).start();
 
-``
+  ``
     
     /**
      * SINGLE Task 只存在一个此Url的下载记录。 再次下载不会创建新任务
@@ -111,10 +110,9 @@ Application中初始化下载
      */
     NEW_TASK,
 
-```
+  ``
                 
              
-
 **下载Tag**
 
 可以通过`tag(String)` 设置下载ID
