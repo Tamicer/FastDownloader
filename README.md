@@ -82,7 +82,37 @@ Application中初始化下载
                 
 ```  
 
-                
+**下载Task模式**
+
+ 
+
+ `DownMode`  默认为DownMode.SINGLE：只存在一个此Url的下载记录。 再次下载不会创建新任务
+ 
+     new Download.Builder().mode(DownMode.SINGLE).url(url)
+                  .build(this)
+                  .start();
+
+``
+    
+    /**
+     * SINGLE Task 只存在一个此Url的下载记录。 再次下载不会创建新任务
+     */
+    SINGLE,
+
+    /**
+     *  Top task
+     *  只存在 Tag的下载记录。 再次下载不会新任务。但是会重新下载，不会删除以前的文件
+     */
+    Top,
+
+    /**
+     * NEW_TASK
+     * 如果存在此UIL的下载记录。 再次下载会新任务。 会重新下载，并且会删除以前的文件
+     */
+    NEW_TASK,
+
+```
+                
              
 
 **下载Tag**
