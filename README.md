@@ -24,7 +24,7 @@
 gradle依赖远程maven包：
 
 
-    compile 'com.tamic.fastdownloader:Android-FastDownloader:1.0.0'
+    compile 'com.tamic.fastdownloader:Android-FastDownloader:1.0.3'
 
 ## 初始化 ##
 
